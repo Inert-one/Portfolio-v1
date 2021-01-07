@@ -1,0 +1,165 @@
+input {
+  display: none;
+}
+
+
+label {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.menu--1 {
+  position:absolute;
+  right: 25%;
+  top: 0%;
+}
+
+label path {
+  fill: none;
+  stroke: #4b1afc;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  --length: 24;
+  --offset: -38;
+  stroke-dasharray: var(--length) var(--total-length);
+  stroke-dashoffset: var(--offset);
+  transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+circle {
+  fill: #4b1afc4d;
+  opacity: 0;
+}
+
+label:hover circle {
+  opacity: 1;
+}
+
+.cross input:checked + svg .line--1,
+.cross input:checked + svg .line--3 {
+  --length: 22.627416998;
+}
+
+.cross input:checked + svg .line--2 {
+  --length: 0;
+}
+
+.back input:checked + svg .line--1,
+.back input:checked + svg .line--3 {
+  --length: 8.602325267;
+}
+
+.menu--1 {
+  background-color: #3f77e9;
+}
+
+.menu--1 .line--1,
+.menu--1 .line--3 {
+  --total-length: 126.64183044433594;
+}
+
+.menu--1 .line--2 {
+  --total-length: 70;
+}
+
+.menu--1 input:checked + svg .line--1,
+.menu--1 input:checked + svg .line--3 {
+  --offset: -94.1149185097;
+}
+
+.menu--1 input:checked + svg .line--2 {
+  --offset: -50;
+}
+
+.menu--2 .line--1,
+.menu--2 .line--3 {
+  --total-length: 111.22813415527344;
+  --offset: -50.22813415527344;
+}
+
+.menu--2 .line--2 {
+  --total-length: 99;
+}
+
+.menu--2 input:checked + svg path {
+  transform: translateX(3px);
+}
+
+.menu--2 input:checked + svg .line--1,
+.menu--2 input:checked + svg .line--3 {
+  --offset: -16.9705627485;
+}
+
+.menu--2 input:checked + svg .line--2 {
+  --offset: -20;
+}
+
+.menu--3 {
+  background-color: #00aef6;
+}
+
+.menu--3 .line--1,
+.menu--3 .line--3 {
+  --total-length: 126.38166809082031;
+}
+
+.menu--3 .line--2 {
+  --total-length: 80;
+}
+
+.menu--3 input:checked + svg .line--1,
+.menu--3 input:checked + svg .line--3 {
+  --offset: -109.1770175568;
+}
+
+.menu--4 {
+  background-color: #18bee5;
+}
+
+.menu--4 .line--1,
+.menu--4 .line--3 {
+  --total-length: 103.35061645507812;
+  --offset: -42.35061645507812;
+}
+
+.menu--4 .line--2 {
+  --total-length: 99;
+}
+
+.menu--4 input:checked + svg path {
+  transform: translateX(31px);
+}
+
+.menu--4 input:checked + svg .line--1,
+.menu--4 input:checked + svg .line--3 {
+  --offset: -8.602325267;
+}
+
+.menu--4 input:checked + svg .line--2 {
+  --offset: -7;
+}
+.menu--1{
+  position:fixed !important;
+  z-index: 1;
+  right: 100px;
+}
+
+@media (max-width: 768px) {
+  .menu--1 label {
+    display: block;
+    z-index: 1000;
+  }
+  .menu--1 {
+    display: block;
+  }
+  label {
+    display: block;
+  }
+}
+

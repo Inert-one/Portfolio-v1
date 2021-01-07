@@ -1,0 +1,94 @@
+
+.edu{
+    margin:20px;
+    text-align:left;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Resume */
+.small-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255,0,0);
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.resume-item {
+    border-left: 2px solid rgb(255,0,0);
+    padding-left: 25px;
+    padding-bottom: 50px;
+}
+
+.resume-item:before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgb(255,0,0);
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    left: 10px;
+}
+
+.resume-title {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    color: rgb(255,0,0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.resume-date {
+    font-size: .8rem;
+    line-height: .8rem;
+    color: #808080;
+    margin: 10px 0;
+}
+
+.resume-desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    font-family: monospace;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.skill-item img {
+    max-width: 80px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px 0 rgba(103,151,255,.1), 0 12px 64px 0 rgba(103,151,255,.1);
+}
+
+@media (max-width: 768px){
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .skill-item {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px){
+    .skills-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .skill-item {
+        margin-right: 0;
+    }
+}

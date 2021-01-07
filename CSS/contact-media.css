@@ -1,0 +1,7 @@
+@media (max-width: 768px){
+    .contact-container{
+        max-width: 90%;
+        right: none;
+        float: none;
+    }
+}
