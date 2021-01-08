@@ -185,13 +185,17 @@ nav.black ul li.active a {
 .rest-top {
   /* visibility:hidden; */
   top: 10%;
-  right: 0%;
+  right: 10%;
   position: absolute;
-  height: calc(120px);
+  height: 15vw;
   max-width: 60%;
   /* background:rgb(90, 2, 255)!important; */
   box-sizing: border-box;
   z-index: 10;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px 1px rgba(124, 94, 192, 0.6);
+  background: rgba(124, 94, 192, 0.164);
+
 }
 .svg1 {
   max-height: 27vw;
@@ -432,7 +436,7 @@ span {
   }
   .rest-top{
     background: rgba(124, 94, 192, 0.164);
-    right: 30%;
+    right: 20%;
     max-height: 400px;
     max-width: 700px;
     padding: 0%;
@@ -507,6 +511,8 @@ span {
     max-height: 400px;
     max-width: 700px;
     padding: 0%;
+    height: 120px;
+
     border-radius: 10px;
     box-shadow: 3px 3px 4px 1px rgba(124, 94, 192, 0.6);
   }
