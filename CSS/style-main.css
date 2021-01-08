@@ -389,6 +389,12 @@ span {
   padding: 20px;
   /* background-position: bottom; */
 }
+@media(max-width: 767px){
+  .Projects{
+    min-height: 50vh;
+    max-height: 100vh;
+  }
+}
 .Contacts{
   background: url(../img/pexels-jesse-yelin-3047470.jpg);
   width: 100%;
@@ -412,22 +418,26 @@ span {
 }
 
 .slides{
-  min-width: 350px;
+  min-width: 300px;
   max-width: 700px;
   border: 2px #fff solid;
   border-radius: 10px 10px 5px 5px;
   box-shadow: 0px 10px 10px 0px;
 }
 
+
 @media(max-width: 767px){
   .slides{
     box-shadow: 0px 0px 6px 0px;
   }
   .rest-top{
-    right: 0%;
-    height: 200px;
-    width: 200px;
+    background: rgba(124, 94, 192, 0.164);
+    right: 30%;
+    max-height: 400px;
+    max-width: 700px;
     padding: 0%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 1px rgba(124, 94, 192, 0.6);
   }
   .btn-1{
     height: 60%;
@@ -435,7 +445,7 @@ span {
   }
   .btn-1 a, footer a{
     padding: 5px;
-    size: 50%;
+    size: 100%;
     cursor: pointer;
   }
   .slides{
@@ -454,7 +464,8 @@ span {
     cursor: pointer;
   }
   #heading{
-    display: none;
+    width: 100%;
+    font-size: 1.5rem;
   }
   .topnav ul li a{
      display:none
@@ -487,4 +498,16 @@ span {
     top: 0;
   }
 
+}
+@media(max-width: 400px){
+
+  .rest-top{
+    background: rgba(124, 94, 192, 0.164);
+    right: 10%;
+    max-height: 400px;
+    max-width: 700px;
+    padding: 0%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px 1px rgba(124, 94, 192, 0.6);
+  }
 }

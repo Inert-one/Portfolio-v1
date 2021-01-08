@@ -66,7 +66,7 @@ new WOW().init();
                   speed: 500,
                   fade: true,
                   autoplay:true,
-                  autoplaySpeed: 4000,
+                  autoplaySpeed: 5000,
                   cssEase: 'linear'
       });
 });   
@@ -76,7 +76,7 @@ new WOW().init();
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 5000,
                   });
                 });
             
@@ -99,12 +99,15 @@ new WOW().init();
 
 
 function myFunction(){
+      var overlay = document.getElementById("body-overlay");
       var main = document.getElementById("mySidebar");
-      if (main.className ==="sidebar"){
+      if (main.className ==="sidebar" && overlay.className ==="body-overlay"){
       main.className += " sideOn";
+      overlay.className += " on"
 }
 else{
       main.className = "sidebar";
+      overlay.className = "body-overlay";
 }
 }
 
