@@ -95,54 +95,54 @@ a {
 
 }
 .sidebar {
-  font-family: 'Courgette', cursive;
+  /* font-family: 'Courgette', cursive; */
   display: none;
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100vw;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: rgba(153, 98, 204, 0.363);
-  overflow-x: hidden;
+  background-color: rgba(55, 52, 58, 0.363);
+  overflow-y: hidden;
   transition: 0.5s;
-  padding-top: 100px;
-  border-radius: 30% 0 0 30%;
+  padding-top: 110px;
+  border-radius: 0 0 30% 30%;
   box-shadow: 0 0 10px 0;
   /* filter: blur(8px); */
 }
 
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  text-align: center;
+  padding: 8px 8px 8px 1px ;
   text-decoration: none;
   margin-top: 10px;
-  font-size: 22px;
-  color: #0ca9f1;
+  font-size: 0;
+  color: #0051ff;
   display: block;
   transition: 0.3s;
+  overflow: hidden;
+  transition: 0.5s font-size;
 }
 
 .sidebar a:hover {
   color: rgb(255, 255, 255);
 }
 
-/* .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
 .sidebar.sideOn {
-  width: 250px;
+  height:35%;
+  overflow: hidden;
+}
+.sidebar.sideOn a{
+  font-size: 24px;
 }
 .sidebar.sideOn #main{
   margin-right: 250px;
 }
 
 #main{
-
+  visibility:visible;
   transition: margin-right .5s;
   padding: 16px;
 }

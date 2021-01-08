@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="CSS/animate.min.css" />
     <link rel="stylesheet" href="CSS/slick-theme.css" />
     <link rel="stylesheet" href="CSS/slick.css" />
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -41,34 +41,35 @@
 
                     </ul>
                 </div>
-                        
-<!-- Mobile Side bar -->
 
-<div id="mySidebar" class="sidebar">
-    <a href="#home">Home</a>
-    <a href="#About">About</a>
-    <a href="#Projects">Projects</a>
-    <a href="#Contacts">Contact me</a>
-    <a> <div id="main" class="main">
-                  <div class="menu cross menu--1"  onclick="sideNav()">
-                      <label>
-                          <input type="checkbox" onclick="myFunction()">
-    
-                          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="50" cy="50" r="30" />
-                              <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
-                              <path class="line--2" d="M0 50h70" />
-                              <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
-                          </svg>
-    
-                      </label>
-                  </div> 
-                 </div>
-    </a>
-              </div>
+                <!-- Mobile Side bar -->
 
-</nav>
-</div>
+                <div id="mySidebar" class="sidebar">
+                    <a href="#home"><i class="fas fa-home"></i> Home</a>
+                    <a href="#About"><i class="far fa-user"></i> About</a>
+                    <a href="#Projects"><i class="fas fa-code"></i> Projects</a>
+                    <a href="#Contacts"><i class="fas fa-mug-hot"></i> Contact me</a>
+                    <a>
+                        <div id="main" class="main">
+                            <div class="menu cross menu--1" onclick="sideNav()">
+                                <label>
+                                    <input type="checkbox" onclick="myFunction()">
+
+                                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="30" />
+                                        <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+                                        <path class="line--2" d="M0 50h70" />
+                                        <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+                                    </svg>
+
+                                </label>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+        </nav>
+    </div>
     <div class="rest-top">
         <div id="heading">
 
@@ -98,18 +99,24 @@
             <!-- <button onClick="pageScroll()">Scroll</button> -->
 
             <div class="long">
-                <p class="About-me" id="About-me">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                <div class="About-me" id="About-me">
+                    <h2 style="display: flex;line-height: 48px;letter-spacing: 0.1em;">Hey there,</h2>
+                    <p style="text-align-last: left; margin-bottom:0.5rem;">This is <b>Shubham Dubey</b> from New Delhi,
+                        India.</p>
+                    <p style="margin-bottom: 8px;text-align-last: left;"> I am an Android developer who develops Apps, Kernels, ROMs, and
+                        Scripts. Currently, I am pursuing my <b>B. Tech. in Computer Science Engineering</b> from
+                        <b>Maharaja Surajmal Institute of Technology (Indraprastha University)</b>. In July 2018 I
+                        completed my Diploma in Mechanical Engineering from G. B. pant Institute of Technology with
+                        first class & distinction.
+                    </p>
+                    <p style="text-align-last: left;">
+                        Apart from being a developer, I used to write tech articles on my blog. I have experience of
+                        more than 4 years in blogging. In the android aftermarket developer community, I am known as
+                        LordArcadius. I am a senior member on the XDA Developers forum. I have done lots of ROMs,
+                        Kernel, App porting & Scripting related projects on XDA forums. ElectraBlue Kernel and ABS
+                        Tweaks are some of my best works.
+                    </p>
+                </div>
             </div>
             <div class="promo" style="--overlay-color: hotpink">
                 <div class="image-wrapper"><img src="./img/InertOne.jpg" alt"dp2" class="dp2"></div>
@@ -190,8 +197,9 @@
                             <img class="img-fluid" src="./img/skills/pg-sql.png" alt="PostgreSQL">
                             <div>PostgreSQL</div>
                         </div> -->
-            </div>
+                </div>
 
+            </div>
         </div>
     </div>
 
@@ -206,86 +214,86 @@
                             <div class="text">
                                 <h3 style="text-decoration: underline;">Random one</h3>
                                 <p
-                                style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                                Random two</p>
+                                    style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    Random two</p>
                                 <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
-                                    style="color:white"></i></a>
-                                    <a href="http://github.com/Inert-one" target="blank"><i
-                                        class="fas fa-diagnoses fa-2x" style="color:white"></i></a>
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <h3>Hello</h3>
-                                
+                                        style="color:white"></i></a>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fas fa-diagnoses fa-2x"
+                                        style="color:white"></i></a>
+
+
                             </div>
-                            <div class="Project-slides">
-                                
-                                <img src="./img/Project images/P1 (1).png" alt="" style="width: 100%;">
-                                <div class="overlay">
-                        <div class="text">
-                            <h3 style="text-decoration: underline;">Random one</h3>
-                            <p
-                                style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                                Random two</p>
-                            <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
-                                style="color:white"></i></a>
-                            <a href="http://github.com/Inert-one" target="blank"><i
-                                    class="fab fa-diagnoses fa-2x" style="color:white"></i></a>
-
-                                    
                         </div>
+                        <h3>Hello</h3>
+
                     </div>
-                    <h3>Hello</h3>
+                    <div class="Project-slides">
 
-                </div>
-            
-                
-                <div class="Project-slides">
-                    
-                    <img src="./img/Project images/P1 (3).png" alt="" style="width: 100%;">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3 style="text-decoration: underline;">Random one</h3>
-                            <p
-                            style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                            Random two</p>
-                            <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
-                                style="color:white"></i></a>
-                            <a href="http://github.com/Inert-one" target="blank"><i
-                                    class="fab fa-diagnoses fa-2x" style="color:white"></i></a>
+                        <img src="./img/Project images/P1 (1).png" alt="" style="width: 100%;">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 style="text-decoration: underline;">Random one</h3>
+                                <p
+                                    style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    Random two</p>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
+                                        style="color:white"></i></a>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-diagnoses fa-2x"
+                                        style="color:white"></i></a>
 
-                                    
+
+                            </div>
                         </div>
+                        <h3>Hello</h3>
+
                     </div>
-                    <h3>Hello</h3>
-                </div>
-                <div class="Project-slides">
 
-                    <img src="./img/Project images/Rivayat.gif" alt="" style="width: 100%;">
-                    <div class="overlay">
-                        <div class="text">
-                            <h3 style="text-decoration: underline;">Random one</h3>
-                            <p
-                            style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-                                Random two</p>
-                            <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
-                                style="color:white"></i></a>
-                            <a href="http://github.com/Inert-one" target="blank"><i
-                                    class="fab fa-diagnoses fa-2x" style="color:white"></i></a>
-                                    
 
+                    <div class="Project-slides">
+
+                        <img src="./img/Project images/P1 (3).png" alt="" style="width: 100%;">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 style="text-decoration: underline;">Random one</h3>
+                                <p
+                                    style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    Random two</p>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
+                                        style="color:white"></i></a>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-diagnoses fa-2x"
+                                        style="color:white"></i></a>
+
+
+                            </div>
                         </div>
+                        <h3>Hello</h3>
                     </div>
-                    <h3>Hello</h3>
+                    <div class="Project-slides">
 
+                        <img src="./img/Project images/Rivayat.gif" alt="" style="width: 100%;">
+                        <div class="overlay">
+                            <div class="text">
+                                <h3 style="text-decoration: underline;">Random one</h3>
+                                <p
+                                    style="font-size:smaller; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                                    Random two</p>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"
+                                        style="color:white"></i></a>
+                                <a href="http://github.com/Inert-one" target="blank"><i class="fab fa-diagnoses fa-2x"
+                                        style="color:white"></i></a>
+
+
+                            </div>
+                        </div>
+                        <h3>Hello</h3>
+
+                    </div>
                 </div>
             </div>
+            <div id="project-location"></div>
         </div>
-        <div id="project-location"></div>
     </div>
-</div>
-<div class="Contacts" id="Contacts">
+    <div class="Contacts" id="Contacts">
 
         <div class="lines">
             <div class="line"></div>
@@ -329,7 +337,7 @@
 
                 </ul>
 
-                
+
             </div>
         </div>
     </div>
@@ -339,7 +347,7 @@
     <script src="JS/script-active.js"></script>
     <script src="JS/script.js"></script>
 
-<div id="contact-location"></div>
+    <div id="contact-location"></div>
 </body>
 
 </html>

@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 * {
   margin: 0%;
   padding: 0%;
-  /* width:100%; */
 }
 body{
+  /* max-height: 100%;
+  width: 100%; */
   background:#000;
 position:absolute;
 display:flexbox;
@@ -195,7 +196,7 @@ nav.black ul li.active a {
   border-radius: 10px;
   box-shadow: 3px 3px 4px 1px rgba(124, 94, 192, 0.6);
   background: rgba(124, 94, 192, 0.164);
-
+  
 }
 .svg1 {
   max-height: 27vw;
@@ -224,10 +225,11 @@ nav.black ul li.active a {
 .About {
 
   position: relative;
-  top: 100%;
+  /* top: 100%; */
   display: inline-block;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 100%;
+  max-height:100vh;
   min-height: 400px;
   color: whitesmoke;
   background-color: black;
@@ -245,6 +247,7 @@ nav.black ul li.active a {
   overflow: hidden;
   padding: 30px;
   /* bottom: 10%; */
+  
 }
 
 .name {
@@ -259,31 +262,26 @@ nav.black ul li.active a {
   margin:4%;
   /* left: -10%; */
 }
+
 .long{
+  font-size:smaller;
+  font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
-  padding: 10px;
-  /* position:relative; */
-  /* margin: 40px 20px; */
   vertical-align: text-bottom;
-  /* margin: 200%; */
   text-align: left;
   justify-content: center;
   align-items:center;
   display: flex;
   float: left;
-  /* left: 5%; */
-  /* margin: auto; */
-  /* position:relative; */
-  /* display: inline-flex; */
   width: 70%;
 }
+.long:hover{
+  box-shadow:0 10px 30px rgba(57,56,61,0.205);
+}
 @media (max-width: 768px) and (max-width: 992px) {
-  .About-me{
-    text-align: center;
-    
-  }
+
   .long{
-    text-align: center;
+    /* text-align: center; */
     width: 90%;
     float:none;
     margin: 40px 20px;
