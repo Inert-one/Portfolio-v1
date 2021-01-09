@@ -100,13 +100,13 @@ a {
   height: 0;
   width: 100vw;
   position: fixed;
-  z-index: 1;
+  z-index: 11221;
   top: 0;
   right: 0;
-  background-color: rgba(55, 52, 58, 0.363);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.274) 90%, rgba(255, 255, 255, 0) 100%);
   overflow-y: hidden;
   transition: 0.5s;
-  padding-top: 110px;
+  padding-top: 100px;
   border-radius: 0 0 30% 30%;
   box-shadow: 0 0 10px 0;
   /* filter: blur(8px); */
@@ -150,4 +150,14 @@ a {
   .sidebar{
     display: block;
   }
+  nav{
+    display:none;
+  }
+}
+.sidebar img{
+  width: 80px;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  top: 0%;
 }

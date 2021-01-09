@@ -23,7 +23,7 @@
 
 function pageScroll() {
       window.scrollBy(0,1);
-      var scrolldelay = setTimeout(pageScroll,10);
+      scrolldelay = setTimeout(pageScroll,10);
   }
 function scrollOff(){
             clearTimeout(scrolldelay);

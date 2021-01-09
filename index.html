@@ -28,21 +28,18 @@
     <div class="body-overlay" id="body-overlay"></div>
     <div class="home-blur"></div>
     <div class="home" id="home">
-        <nav class="nav" id="nav">
-            <div class="nav-container" id="nav-container">
+        <nav class="nav-container" id="nav-container">
+            
                 <!-- Logo -->
                 <img src="./img/Sd..png" alt="Logo.png" id="logo">
                 <!-- Nav buttons -->
-                <div id="button-container" class="topnav">
-                    <ul>
-                        <li class="active"><a class="nav-buttons" href="#home">Home</a></li>
-                        <li><a class="nav-buttons" href="#About">About</a></li>
-                        <li><a class="nav-buttons" href="#Projects">Projects</a></li>
-                        <li><a class="nav-buttons" href="#contact-location">Contact me</a></li>
-
-                    </ul>
-                </div>
-
+                <ul class="navclass navbar">
+                    <li class="nav-item active"><a href="#home">HOME</a></li>
+                    <li class="nav-item"><a href="#About">ABOUT</a></li>
+                    <li class="nav-item"><a href="#Projects">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#Contacts">CONTACT ME</a></li>
+                </ul>
+        </nav>
                 <!-- Mobile Side bar -->
 
                 <div id="mySidebar" class="sidebar">
@@ -50,9 +47,9 @@
                     <a href="#About"><i class="far fa-user"></i> About</a>
                     <a href="#Projects"><i class="fas fa-code"></i> Projects</a>
                     <a href="#Contacts"><i class="fas fa-mug-hot"></i> Contact me</a>
-                    <a>
-                        <div id="main" class="main">
-                            <div class="menu cross menu--1" onclick="sideNav()">
+                    <div id="main" class="main">
+                            <img src="./img/Sd..png" alt="Logo.png" id="logo">
+                            <div class="menu cross menu--1">
                                 <label>
                                     <input type="checkbox" onclick="myFunction()">
 
@@ -65,11 +62,12 @@
 
                                 </label>
                             </div>
+
                         </div>
                     </a>
                 </div>
 
-        </nav>
+
     
     <div class="rest-top">
         <div id="heading">
@@ -343,8 +341,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="JS/script-slick.js"></script>
     <script src="JS/wow.js"></script>
-    <script src="JS/script-active.js"></script>
     <script src="JS/script.js"></script>
+    <script src="JS/script-active.js"></script>
 
     <div id="contact-location"></div>
 </body>
