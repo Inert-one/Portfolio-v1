@@ -187,3 +187,15 @@ function typeWriter2() {
   }
 }
 typeWriter2();
+
+
+// Poem Scroller
+$(document).ready(function(){
+$('.paper-text').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  swipeToSlide: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+        });
+      });
