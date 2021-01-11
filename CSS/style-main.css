@@ -10,7 +10,7 @@
 body{
   /* max-height: 100%;
   width: 100%; */
-  font-family: 'century-gothic', sans-serif;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   background:#000;
 position:absolute;
 display:flexbox;
