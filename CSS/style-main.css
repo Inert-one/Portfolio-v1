@@ -818,3 +818,12 @@ span {
 .dark .dark-toggle{
   color: rgb(0, 0, 0);
 }
+
+@media(max-width:767px){
+  .dark-toggle{
+    position:fixed;
+    top: calc(100% - 1.5em);
+    bottom:20px;
+    right: 20px
+  }
+}
