@@ -1,8 +1,11 @@
 /* The slides with borders */
  .slides {
-    border-bottom: 15px white solid;
+    border-bottom: 20px white solid;
     padding: 5px;
  }
+.dark .slides{
+    border-bottom: 20px black solid;
+}
   
   /* The keyboard of the slides */
   .slides:after{
@@ -11,13 +14,17 @@
     position: absolute;
     width: 870px;
     height: 30px;
-    margin: 30px 0 0 -90px;
+    margin: 10px 0 0 -90px;
     background: white;
     border-radius: 0px 0px 50% 50% ;
     box-shadow: 0px 50px 50px 0px;
 
 
   }
+
+ .dark .slides:after{
+     background: #000
+}
   /* The top of the keyboard */
 .slides:before {
     content: '';
@@ -33,6 +40,10 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     z-index: 1;
+  }
+
+  .dark .slides:before{
+    background:rgb(218, 217, 217)
   }
  @media(max-width:767px){
      .slides{

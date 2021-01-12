@@ -98,12 +98,7 @@ else{
 }
 
 
-$('.Contacts').mousemove(function(e){
-      var amountMovedX = (e.pageX * 1 / 20);
-      var amountMovedY = (e.pageY * 1 / 20);
-      $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-  });
-
+// 
 // ES6 Class
 class TypeWriter {
       constructor(txtElement, words, wait = 3000) {
@@ -199,3 +194,12 @@ $('.paper-text').slick({
   autoplaySpeed: 2000,
         });
       });
+
+ function darkOn() {
+        var element = document.body;
+        var btnOn = document.getElementById("dark");
+        element.classList.toggle("dark");
+        btnOn.classList.toggle("fa-toggle-on");
+      }
+
+ 

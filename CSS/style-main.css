@@ -32,6 +32,12 @@ color: white;
   width: 100%;
   z-index: 0;
 }
+
+.dark .home-blur {
+  background: url(/img/undraw_Resume_re_hkth.svg) ;
+  filter: blur(6px);
+}
+
 .home {
   position: relative;
   width: 100%;
@@ -47,6 +53,10 @@ nav #logo {
   height: 20vw;
   transition: 0.5s;
 
+}
+
+.dark nav #logo{
+  filter:invert()
 }
 nav.black #logo {
   height: 7.5vw;
@@ -66,10 +76,17 @@ nav {
   background:rgba(255, 255, 255, 0);
   
 }
+
+.dark nav{
+  background: rgba(0,0,0,0)
+}
+
 nav.black{
   background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 0) 100%);
 }
-
+.dark nav.black{
+  background: linear-gradient(to bottom, rgb(255, 255,255) 50%, rgba(0,0,0,0) 100%);
+}
 .navclass, .navbar {
   width: 500px;
   margin: auto;
@@ -89,6 +106,9 @@ nav.black{
   color: #ffffff;
   text-decoration: none;
 }
+.dark .navclass a, .dark .navbar a{
+  color:#000;
+}
 .navclass .nav-item, .navbar .nav-item {
   padding: 5px 0;
 }
@@ -107,7 +127,9 @@ nav.black{
   top: 7px;
   background: #3c3c3c;
 }
-
+.dark .navclass .nav-item:hover:after, .dark .navbar .nav-item:hover:after{
+  background:rgb(228, 226, 226);
+}
 .active:after {
   height: 2px !important;
   background: #e74c3c !important;
@@ -149,6 +171,11 @@ nav.black{
   left: 45%; 
   margin: auto;
 }
+
+.dark #heading{
+  color: black;
+}
+
 .blink {
   animation: blinker 0.8s infinite step-end;
 }
@@ -167,6 +194,9 @@ nav.black{
   color: #fff;
 }
 
+.dark #heading h2{
+  color:rgb(0, 0, 0);
+}
 
 @media(min-width: 1200px) {
   #heading  h1 {
@@ -266,12 +296,18 @@ nav.black{
   background-color: black;
   padding: 20px;
 }
+
+.dark .About{
+  color:rgb(7, 7, 7);
+  background-color:#fff
+}
+
 .About-container {
   position: relative;
   font-family: "Lobster", cursive;
   font-size: 20px;
   margin: 0% auto;
-  border: solid 3px;
+  border: solid 3px white;
   width: auto;
   min-height: 360px;
   text-align: center;
@@ -280,7 +316,9 @@ nav.black{
   /* bottom: 10%; */
   
 }
-
+.dark .About-container{
+  border: solid 3px #000
+}
 .name {
   padding: 20px;
   text-decoration: underline;
@@ -308,6 +346,9 @@ nav.black{
 }
 .long:hover{
   box-shadow:0 10px 30px rgba(57,56,61,0.205);
+}
+.dark .long:hover{
+  box-shadow:0 10px 30px rgba(119, 119, 129, 0.205)
 }
 @media (max-width: 768px) and (max-width: 992px) {
 
@@ -352,10 +393,18 @@ footer a,
   position: relative;
   display: inline-block;
 }
+.dark .btn-1 a{
+  border: 2px solid rgb(29, 29, 29);
+  color: #fff;
+}
 footer a:hover,
 .btn-1 a:hover{
   color: #fff;
   transition: 0.5s;
+}
+.dark footer a:hover,
+.dark .btn-1 a:hover{
+  color:#000;
 }
 
 span {
@@ -379,6 +428,10 @@ span {
   transform: scaleY(1);
   color: #000;
 }
+.dark .btn-1 a::before{
+  background-color:#000;
+  color: #fff
+}
 
 .btn-1 a:hover::before {
   transform: scaleY(0);
@@ -396,12 +449,18 @@ span {
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
+.dark .btn-1 a::after{
+  background-color:#000;
+}
 
 .btn-1 a:hover::after {
   transform: scaleX(0);
 }
 
-
+.dark{
+  background: #fff;
+  color: #000;
+}
 /* Project container */
 .Projects{
   background: url(../img/pexels-adrien-olichon-2387793.jpg);
@@ -421,6 +480,10 @@ span {
   box-sizing: border-box;
   padding: 20px;
   /* background-position: bottom; */
+}
+
+.dark .Projects{
+  background: url(../img/cool-background.svg)
 }
 @media(max-width: 767px){
   .Projects{
@@ -445,6 +508,10 @@ span {
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+.dark .Contacts{
+  background: url(../img/Dragon-Scales.svg)
+}
 .Project-container{
   font-family: "Lobster", cursive;
   font-size: 20px;
@@ -457,7 +524,9 @@ span {
   border-radius: 10px 10px 5px 5px;
   box-shadow: 0px 10px 10px 0px;
 }
-
+.dark .slides{
+  border: 2px #000 solid;
+}
 
 @media(max-width: 767px){
   .slides{
@@ -548,7 +617,9 @@ span {
   display: inline;
 }
 
-
+.dark .skewed-bg{
+  background:#ffe2e2;
+}
 /* .footer-distributed{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -676,6 +747,9 @@ span {
   border-radius: 50%;
   box-shadow: inset 0px 0px 2px 0px #888;
 }
+.dark .holes{
+  background: #ffe2e2;
+}
 .hole-top {
   top: 10%;
 }
@@ -732,3 +806,15 @@ span {
   }
 }
 
+.dark-toggle{
+  position:fixed;
+  top: 10px;
+  right: 30px;
+  font-size: 38px;
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.dark .dark-toggle{
+  color: rgb(0, 0, 0);
+}

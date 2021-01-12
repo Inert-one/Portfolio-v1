@@ -40,6 +40,9 @@ body {
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
+.dark .lines{
+  background: rgba(0,0,0,0.1);
+}
 .line::after {
   content: "";
   display: block;
@@ -52,6 +55,9 @@ body {
   animation: drop 7s 0s infinite;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.dark .line::after{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 75%, #000000 100%);
 }
 .line:nth-child(1) {
   margin-left: -25%;

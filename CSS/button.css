@@ -12,6 +12,10 @@
     color: rgb(255, 255, 255);
     
   }
+  .dark .cta{
+    color: rgb(0,0,0)
+  }
+
   .cta:before {
     content: "";
     position: absolute;
@@ -46,6 +50,10 @@
     transform:rotate(90deg) translateX(-5px);
     transition: all 0.3s ease;
   }
+
+ .dark .cta svg {
+   stroke:black;
+ }
   .cta:hover:before {
     width: 100%;
     background:  rgb(255, 0, 0);
@@ -75,6 +83,11 @@ a {
   justify-content: center;
   text-align:center;
   align-self: start;
+}
+
+.dark .Project-container{
+  color: black;
+  border: 2px solid black;
 }
 @media(max-width: 767px){
   .Project-container{
@@ -111,7 +124,9 @@ a {
   box-shadow: 0 0 10px 0;
   /* filter: blur(8px); */
 }
-
+.dark .sidebar {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.767) 90%, rgba(0, 0, 0, 0.623) 100%);
+}
 
 .sidebar a {
   text-align: center;
@@ -128,6 +143,10 @@ a {
 
 .sidebar a:hover {
   color: rgb(255, 255, 255);
+}
+
+.dark .sidebar a {
+  color:rgb(0, 247, 255);
 }
 
 .sidebar.sideOn {
@@ -160,4 +179,8 @@ a {
   margin: auto;
   display: flex;
   top: 0%;
+}
+.dark .slides{
+  background-color: black;
+  color: white;
 }
