@@ -7,11 +7,16 @@
   margin: 0%;
   padding: 0%;
 }
+
+
+
 body{
   /* max-height: 100%;
   width: 100%; */
-  font-family: 'Century gothic';
+  font-family: 'nunito', sans-serif;
   background:#000;
+  font-weight: 200;
+  font-style: normal;
 position:absolute;
 display:flexbox;
 flex-direction: row;
