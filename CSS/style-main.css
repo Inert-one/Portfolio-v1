@@ -60,6 +60,7 @@ nav #logo {
 
 }
 
+
 .dark nav #logo{
   filter:invert()
 }
@@ -139,12 +140,20 @@ nav.black{
   height: 2px !important;
   background: #e74c3c !important;
 }
+
+#dark{
+  font-size: 25px;
+}
+
 @media screen and (max-width: 550px) {
   .navclass, .navbar {
     width: 90% !important;
   }
   .navclass .nav-item, .navbar .nav-item {
     font-size: 10px !important;
+  }
+  #dark{
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 350px) {

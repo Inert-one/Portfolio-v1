@@ -198,8 +198,17 @@ $('.paper-text').slick({
  function darkOn() {
         var element = document.body;
         var btnOn = document.getElementById("dark");
-        element.classList.toggle("dark");
-        btnOn.classList.toggle("fa-toggle-on");
-      }
+        console.log(btnOn)
 
- 
+        element.classList.toggle("dark");
+      if(btnOn.classList.contains("fa-sun")){
+        btnOn.classList.add("fa-moon");
+        btnOn.classList.remove("fa-sun");
+       }else{
+         btnOn.classList.add("fa-sun");
+         btnOn.classList.remove('fa-moon')
+       }
+
+      }
+   
+      console.log(btnOn)
