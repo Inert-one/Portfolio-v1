@@ -21,16 +21,14 @@
 
 //     Auto Scrolling
 
+var scrolldelay;
 function pageScroll() {
       window.scrollBy(0,1);
       scrolldelay = setTimeout(pageScroll,10);
-  }
-function scrollOff(){
-            clearTimeout(scrolldelay);
-      }
+    }   
 
-window.addEventListener("touchmove", scrollOff )
-window.addEventListener("mousemove", scrollOff )
+window.addEventListener("touchmove", function(){clearTimeout(scrolldelay);} )
+window.addEventListener("mousemove", function(){clearTimeout(scrolldelay);} )
 
 // Slideshow
 
@@ -198,7 +196,7 @@ $('.paper-text').slick({
  function darkOn() {
         var element = document.body;
         var btnOn = document.getElementById("dark");
-        console.log(btnOn)
+        // console.log(btnOn)
 
         element.classList.toggle("dark");
       if(btnOn.classList.contains("fa-sun")){
@@ -210,5 +208,3 @@ $('.paper-text').slick({
        }
 
       }
-   
-      console.log(btnOn)
