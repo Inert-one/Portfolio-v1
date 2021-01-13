@@ -148,9 +148,12 @@ a {
 .dark .sidebar a {
   color:rgb(0, 247, 255);
 }
+.dark .sidebar a:hover {
+  color:rgba(255, 241, 239, 0.747);
+}
 
 .sidebar.sideOn {
-  height:35%;
+  height:300px;
   overflow: hidden;
 }
 .sidebar.sideOn a{
