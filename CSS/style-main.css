@@ -822,7 +822,7 @@ span {
 
 .dark-toggle{
   position:fixed;
-  top: 10px;
+  /* top: 10px; */
   right: 30px;
   font-size: 38px;
   opacity: 0.5;
@@ -836,8 +836,8 @@ span {
 @media(max-width:767px){
   .dark-toggle{
     position:fixed;
-    top: calc(100% - 1.5em);
-    bottom:20px;
+    /* top: calc(100% - 1.5em); */
+    bottom:10px;
     right: 20px
   }
 }
