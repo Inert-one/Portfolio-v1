@@ -129,7 +129,7 @@
     background: rgba(114, 113, 113, 0);
 }
 .body-overlay.on{
-    height: 102%;
+    height: 101.5%;
     /* filter:blur(10px); */
 }
 .Project-slides{
