@@ -16,6 +16,8 @@
 .dark .contact-container{
     background-color:#fff;
     border: #000 solid 3px;
+    box-shadow: 6px 4px 25px 0px;
+
 }
 .contact-address{
     float: center;

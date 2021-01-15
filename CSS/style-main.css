@@ -497,7 +497,11 @@ span {
 }
 
 .dark .Projects{
-  background: url(../img/cool-background.svg)
+  background: url(../img/cool-background.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media(max-width: 767px){
   .Projects{
@@ -524,8 +528,13 @@ span {
 }
 
 .dark .Contacts{
-  background: url(../img/Dragon-Scales.svg)
+  background: url(../img/undraw_contact_us_15o2.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  background-position: left;
 }
+
 .Project-container{
   font-family: "Lobster", cursive;
   font-size: 20px;
@@ -545,6 +554,9 @@ span {
 @media(max-width: 767px){
   .slides{
     box-shadow: 0px 0px 6px 0px;
+  }
+  .dark .Contacts{
+    background-size: 100vw;
   }
   .rest-top{
     background: rgba(124, 94, 192, 0.164);
