@@ -9,7 +9,7 @@
     z-index: 2;
     border-radius:15px;
     float: right;
-    /* justify-content: right; */
+    box-shadow: 1px 1px 15px 0px;
     right: 5%;
 }
 
