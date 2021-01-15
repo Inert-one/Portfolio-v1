@@ -497,7 +497,11 @@ span {
 }
 
 .dark .Projects{
-  background: url(../img/cool-background.svg)
+  background: url(../img/cool-background.svg);
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media(max-width: 767px){
   .Projects{
@@ -524,7 +528,11 @@ span {
 }
 
 .dark .Contacts{
-  background: url(../img/Dragon-Scales.svg)
+  background: url(../img/Dragon-Scales.svg);
+	background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .Project-container{
   font-family: "Lobster", cursive;
