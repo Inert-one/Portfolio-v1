@@ -9,13 +9,15 @@
     z-index: 2;
     border-radius:15px;
     float: right;
-    /* justify-content: right; */
+    box-shadow: 1px 1px 15px 0px;
     right: 5%;
 }
 
 .dark .contact-container{
     background-color:#fff;
     border: #000 solid 3px;
+    box-shadow: 6px 4px 25px 0px;
+
 }
 .contact-address{
     float: center;
