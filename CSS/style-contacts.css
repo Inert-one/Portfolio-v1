@@ -17,7 +17,7 @@
     background-color:#fff;
     border: #000 solid 3px;
     box-shadow: 6px 4px 25px 0px;
-
+    color: #6C63FF
 }
 .contact-address{
     float: center;
@@ -29,26 +29,24 @@
 }
 
 .social li{
-    /* position: absolute; */
     float: right;
-    /* line-height: 40px; */
     list-style-type: none;
-    /* background: rgba(221, 52, 52, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    /* padding-left: 40px; */
     transition: 0.5s;
     display: inline-flex;
-    /* justify-content: flex-start; */
     flex-direction: row; 
     margin:5px;
-
+    color:#fff
 }
+
 .social ul li{
     margin-bottom: 15px;
+}
+.dark .social li {
+    color: #6b63ff;
+}
+.dark .contact-container::selection, .dark .contact-container::-moz-selection{
+    background-color: #6C63FF;
+    color: white;
 }
 .fab:hover{
     opacity: 0.8;
@@ -74,7 +72,7 @@
     padding: 3%;
 }
 .dark .contact-map{
-    background: #000;
+    background: #6C63FF;
     color: #fff;
     border: 2px solid #000;
 }
