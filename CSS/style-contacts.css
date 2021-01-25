@@ -140,6 +140,10 @@
   .Project-slides:hover .overlay {
     height: 100%;
   }
+
+  .Project-slides video:hover .overlay {
+    height: 100%;
+  }
   
   .text {
     color: white;
