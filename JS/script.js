@@ -192,19 +192,23 @@ $('.paper-text').slick({
   autoplaySpeed: 2000,
         });
       });
-
- function darkOn() {
-        var element = document.body;
-        var btnOn = document.getElementById("dark");
-        // console.log(btnOn)
-
+function darkOn() {
+  var element = document.body;
+  var btnOn = document.getElementById("dark");
+  // console.log(btnOn)
+  
         element.classList.toggle("dark");
       if(btnOn.classList.contains("fa-sun")){
         btnOn.classList.add("fa-moon");
         btnOn.classList.remove("fa-sun");
-       }else{
+      }else{
          btnOn.classList.add("fa-sun");
          btnOn.classList.remove('fa-moon')
        }
-
+       
       }
+
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (!isDarkMode) {
+        darkOn()
+      } 
