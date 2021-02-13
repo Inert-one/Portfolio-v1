@@ -212,3 +212,82 @@ const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme
 if (!isDarkMode) {
         darkOn()
       } 
+
+
+// // Contact us
+// $('document').ready(function(){
+// 	$('input[type="text"], input[type="email"], textarea').focus(function(){
+// 		var background = $(this).attr('id');
+// 		$('#' + background + '-form').addClass('formgroup-active');
+// 		$('#' + background + '-form').removeClass('formgroup-error');
+// 	});
+// 	$('input[type="text"], input[type="email"], textarea').blur(function(){
+// 		var background = $(this).attr('id');
+// 		$('#' + background + '-form').removeClass('formgroup-active');
+// 	});
+
+// function errorfield(field){
+// 	$(field).addClass('formgroup-error');
+// 	console.log(field);	
+// }
+
+// $("#waterform").submit(function() {
+// 	var stopsubmit = false;
+
+// if($('#name').val() == "") {
+// 	errorfield('#name-form');
+// 	stopsubmit=true;
+// }
+// if($('#email').val() == "") {
+// 	errorfield('#email-form');
+// 	stopsubmit=true;
+// }
+//   if(stopsubmit) return false;
+// });
+		
+// });
+
+
+// Get the messages div.
+var formMessages = $('#msgSubmit');
+
+// Get the form.
+var form = $('#contactForm');
+
+// Set up an event listener for the contact form.
+$(form).submit(function(e) {
+  // Stop the browser from submitting the form.
+  e.preventDefault();
+
+  // Submit the form using AJAX.
+  $.ajax({
+      type: 'POST',
+      url: "contact.php",
+      data:'name='+$("#name").val()+'&email='+ $("#email").val()+'&message='+ $("#message").val(),
+      beforeSend:function(){
+          $("#contactform .formgroup").prop('disabled', 'true');
+          $("#contactform input.submit").val('Sending...');
+      },
+      success:function(data){
+          formMessages.css('display', 'block');
+          formMessages.removeClass('alert alert-danger');
+          formMessages.addClass('alert alert-success');
+          $("#contactForm .form-control").removeAttr("disabled");
+          $("#contactForm input.submit").val('Send Again!!');
+          formMessages.text("Form Submitted Successfully");
+          $("#name, #email, #message").val("");
+          formMessages.fadeOut(5000);
+      },
+      error:function(xhr,status,error){
+          formMessages.css('display', 'block');
+          $("#contactForm .form-control").removeAttr("disabled");
+          $("#contactForm input.submit").val('Send Again!!');
+          formMessages.removeClass('alert alert-success');
+          formMessages.addClass('alert alert-danger');
+          formMessages.text(error);
+          formMessages.fadeOut(5000);
+      }
+  });
+  
+
+});

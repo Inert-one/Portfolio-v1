@@ -2,8 +2,12 @@
 <html lang="en">
 
     <head>
+        <!-- Meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#317EFB"/>
+
+        <!-- Links -->
         <link rel="stylesheet" href="./CSS/button.css">
         <link rel="stylesheet" href="./CSS/contact-media.css/">
         <link rel="stylesheet" href="Css/style-hamburger.css">
@@ -25,6 +29,7 @@
 
         <title>Shubham Dubey</title>
         <link rel="shortcut icon" href="img/Sd..png" type="image/x-icon">
+
     </head>
 
     <body>
@@ -90,6 +95,10 @@
                 <!-- <img src="./img/undraw_Personal_site_re_c4bp.svg" alt="svg1" class="svg1"> -->
             </div>
         </div>
+
+        <!-- ---------------------------------------------------------------------------------------- -->
+
+
         <div class="About" id="About">
             <div class="About-container">
                 <h1 class="name">About</h1>
@@ -128,7 +137,7 @@
                     </div>
                 </div>
                 <div class="promo" style="--overlay-color: hotpink">
-                    <div class="image-wrapper"><img src="./img/InertOne.jpg" alt"dp2" class="dp2"></div>
+                    <div class="image-wrapper"><img src="./img/InertOne.jpg" alt="dp2" class="dp2"></div>
                 </div>
                 <!-- Skills -->
                 <div class="edu">
@@ -320,32 +329,41 @@
                 <h1 class="name">Contact me</h1>
                 <div class="contact-me">
                     <h2>Talk to me.</h2>
-                    <p>You will not have to wait a long on a phone call, as I'm the one waiting this side.
-                        Your email isn't going to inbox abyss, never to be answered. So, please feel free to contact me.
-                    </p>
                 </div>
                 <div class="contact-map">
-                    <li class="contact-address"><i class="fa fa-1x fa-paper-plane"></i><span> Email : </span><a
-                            href="mailto:shubhamdubey57@gmail.com"> Shubhamdubey57@gmail.com</a></li>
-                    <li class="contact-address"><i class="fa fa-1x fa-phone-alt"></i><span> Call me at : </span><a
-                            href="tel:+918700653684"> +91-8700653684</a></li>
-                    <li class="contact-address"><i class="fa fa-1x fa-map"></i><span> Address : </span>A-77/1, Om
-                        enclave,
-                        Part-1, Faridabad, Haryana -121003</li>
+                    <div class="hid"><i class="fas fa-envelope-open fa-4x"></i></div>
+                <div id="msgSubmit"></div>
+                    <div id="form">
+                        <form method="post" id='contactForm' action="contact.php">
+
+                            <div class="formgroup" id="name-form">
+                                <input type="text" id="name" class='form-control' name="name" required='' placeholder="Your name" />
+                            </div>
+
+                            <div class="formgroup" id="email-form">
+                                <input type="email" id="email" class='form-control' name="email" required='' placeholder="Your e-mail" />
+                            </div>
+
+                            <div class="formgroup" id="message-form">
+                                <textarea id="message" name="message" class='form-control' required='' placeholder="Your message"></textarea>
+                            </div>
+
+                            <input type="submit" value="Send your message!" class="submit" />
+                        </form>
+                    </div>
+
                 </div>
                 <div class="social">
                     <ul>
+                        <li><a href="mailto:shubhamdubey57@gmail.com"><i class="fa fa-2x fa-paper-plane"></a></i></li>
+                        <li><a href="tel:+918700653684"><i class="fa fa-2x fa-phone-alt"></a></i></li>
 
-                        <li><a href="http://www.facebook.com/tryingtobegreat" target="blank"><i
-                                    class="fab fa-facebook fa-2x"></i></a></li>
                         <li><a href="http://github.com/Inert-one" target="blank"><i class="fab fa-github fa-2x"></i></a>
                         </li>
                         <li><a href="http://www.twitter.com/_vidhushak_" target="blank"><i
                                     class="fab fa-twitter fa-2x"></i></a></i></li>
                         <li><a href="http://linkedin.com/in/Inert-one/" target="blank"><i
                                     class="fab fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="http://www.instagram.com/inert_one" target="blank"><i
-                                    class="fab fa-instagram fa-2x"></i></a></li>
 
                     </ul>
 

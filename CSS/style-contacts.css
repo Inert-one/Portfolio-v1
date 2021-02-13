@@ -1,32 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 .contact-container{
-    background-color:black;
+    background-color:#0084ff1c;;
     position: absolute;
     border:rgb(255, 255, 255) solid 3px;
     /* height: 100vh; */
-    max-width: 60%;
+    width: 60%;
     z-index: 2;
     border-radius:15px;
-    float: right;
+
     box-shadow: 1px 1px 15px 0px;
-    right: 5%;
+    color: #0084ff;
 }
 
 .dark .contact-container{
     background-color:#fff;
     border: #000 solid 3px;
     box-shadow: 6px 4px 25px 0px;
-    color: #6C63FF
+    color: #6b63ff;
+    right: 5%;
+    width: 60%;
+    float: right;
 }
-.contact-address{
-    float: center;
-    display:block;
-    position: relative;
-    text-align: center;
-    margin-top:auto
-    
-}
+
 
 .social li{
     float: right;
@@ -35,11 +31,11 @@
     display: inline-flex;
     flex-direction: row; 
     margin:5px;
-    color:#fff
+    color:#0084ff
 }
 
 .social ul li{
-    margin-bottom: 15px;
+    transform: scale(0.8);
 }
 .dark .social li {
     color: #6b63ff;
@@ -48,7 +44,7 @@
     background-color: #6C63FF;
     color: white;
 }
-.fab:hover{
+.fab:hover, .fa:hover{
     opacity: 0.8;
 }
 .contact-me{margin:auto;
@@ -65,9 +61,9 @@
 }
 .contact-map{
     border-radius: 15px;
-    background: #fff;
+    background: #0084ff36;
     color: #000;
-    margin: 30px 20px 10px 20px;
+    margin: 20px 20px 10px 20px;
     border: 2px solid #fff;
     padding: 3%;
 }
@@ -77,18 +73,35 @@
     border: 2px solid #000;
 }
 
-.contact-map li{
-    padding: 5px;
+.hid{
+    display:none;
 }
-
 @media (max-width: 768px){
-    .contact-container{
-        max-width: 90%;
-        right: none;
+    .contact-container, .dark .contact-container{
+        width: 90%;
+        height: 80vh;
+        right: auto;
         float: none;
         margin:auto;
     }
+    .contact-map{
+        height: 56vh
+    }
+    form{
+        margin:auto;
+        height: 40vh;
+        position:absolute;
+    }
+    .hid{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #5217f3;
+    margin:10px auto;
+    }
+
 }
+
 
 
 .Project-slides {
@@ -160,3 +173,88 @@
   .dark .text{
       color: rgb(255, 255, 255)
   }
+
+  .contact-container .name{
+      padding: 10px 0 0 0;
+  }
+  .contact-container h2{
+      margin: 0%;
+  }
+
+  #form{
+	overflow: hidden;
+	position: relative;
+	
+}
+.social{
+    margin-right: 20px;
+}
+form{
+	margin: 0 auto;
+	width: 90%;
+	padding-top: 10px;
+	color: white;
+	position: relative;
+    float: center;	
+}
+.Contacts label, .Contacts input, .Contacts textarea{
+	display: block;	
+}
+.Contacts input, .Contacts textarea{
+    margin-top: 5px;
+	width: 100%;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+	color: #676767;
+	transition: border 0.5s;
+	-webkit-transition: border 0.5s;
+	-moz-transition: border 0.5s;
+	-o-transition: border 0.5s;
+	border: solid 3px #5033f7;	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	
+}
+.Contacts input:focus, .Contacts textarea:focus{
+	border: solid 3px #5217f3;	
+}
+
+.Contacts textarea{
+	height: 100px;	
+	resize: none; 
+	overflow: auto;
+}
+.Contacts input[type="submit"]{
+	background-color: rgb(0, 102, 255);
+	color: white;
+	height: 40px;
+    padding: 0px;
+	cursor: pointer;
+	margin-top: 25px;
+	font-size: 1.1em;
+	font-family: 'Sniglet', cursive;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+.Contacts input[type="submit"]:hover{
+	background-color: #0e52e5;
+}
+
+.alert-danger{
+    color: white;
+    background: red;
+    text-align: center;
+}
+
+.alert-success{
+    text-align: center;
+    color: white;
+    background: green;
+}
