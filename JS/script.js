@@ -262,26 +262,26 @@ $(form).submit(function(e) {
   // Submit the form using AJAX.
   $.ajax({
       type: 'POST',
-      url: "contact.php",
+      url: "https://script.google.com/macros/s/AKfycby9LLwJtku7rdiwiwtMEUa3gEvMsBrpBntlXvfPJOny2rKJcaOZVuIwdA/exec",
       data:'name='+$("#name").val()+'&email='+ $("#email").val()+'&message='+ $("#message").val(),
       beforeSend:function(){
           $("#contactform .formgroup").prop('disabled', 'true');
           $("#contactform input.submit").val('Sending...');
       },
       success:function(data){
-          formMessages.css('display', 'block');
+        formMessages.css('display', 'block');
           formMessages.removeClass('alert alert-danger');
           formMessages.addClass('alert alert-success');
           $("#contactForm .form-control").removeAttr("disabled");
           $("#contactForm input.submit").val('Send Again!!');
-          formMessages.text("Form Submitted Successfully");
+          formMessages.text("Thanks for initiating conversation!");
           $("#name, #email, #message").val("");
           formMessages.fadeOut(5000);
       },
       error:function(xhr,status,error){
           formMessages.css('display', 'block');
           $("#contactForm .form-control").removeAttr("disabled");
-          $("#contactForm input.submit").val('Send Again!!');
+          $("#contactForm input.submit").val('Try Again!!');
           formMessages.removeClass('alert alert-success');
           formMessages.addClass('alert alert-danger');
           formMessages.text(error);
