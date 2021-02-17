@@ -874,6 +874,9 @@ span {
   #msgSubmit{
     width: 70vw;
   }
+  .Contacts{
+    min-height: 700px;
+  }
   /* .contact-container{
     min-height: 80vh;
   }
