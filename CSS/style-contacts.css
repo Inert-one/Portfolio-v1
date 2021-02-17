@@ -270,4 +270,7 @@ form{
     .Contacts{
         height: 100%
     }
+    .form{
+        height: 300px;
+    }
 }
