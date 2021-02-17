@@ -862,7 +862,6 @@ span {
 }
 #msgSubmit{
   border-radius: 10px;
-  width: 90vw;
 }
 
 @media (max-width: 767px) {
@@ -875,10 +874,10 @@ span {
   #msgSubmit{
     width: 70vw;
   }
-  .contact-container{
+  /* .contact-container{
     min-height: 80vh;
   }
   .contact-map{
     min-height: 50vh;
-  }
+  } */
 }

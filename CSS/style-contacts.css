@@ -258,3 +258,16 @@ form{
     color: white;
     background: green;
 }
+
+@media(max-width:786px){
+    .contact-container, .dark .contact-container{
+        min-height: 500px;
+    }
+    .contact-map{
+        min-height: 400px;
+
+    }
+    .Contacts{
+        height: 100%
+    }
+}
